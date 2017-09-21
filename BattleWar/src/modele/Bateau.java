@@ -13,6 +13,7 @@ public class Bateau {
 	private int taille;
 	private int nFoisToucher;
 	private int tabBateau[];
+	private int tabtTestToucher[];
 	private int x,y;
 
 	public Bateau(String name,int grandeur) {
@@ -33,16 +34,28 @@ public class Bateau {
 	public int getTaille() {
 		return taille;
 	}
-
-
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated m
-		System.out.println("lo");
-
-	}
+	
+	public int testLocalisation(int localisation){
+		/*
+		 * Test si la position correspond au bateau et si il a deja ete touche au meme endroit
+		 * si OUI, retourne True
+		 * sinon retourne False
+		 */
+		for(int a=0; a < taille; a++){
+			if (localisation == tabBateau[a]){
+				for(int z = 0; z < taille; z++){
+					if (localisation == tabtTestToucher[a]){ 
+						a--;
+						return 0;
+					}
+				}
+				tabtTestToucher[a] = localisation;
+				a++;
+				return 2;
+			}
+		}
+		return 1;
+		
+}
 
 }
