@@ -40,7 +40,7 @@ public class Bateau {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated methoub
+		// TODO Auto-generated m
 		System.out.println("lo");
 
 	}
