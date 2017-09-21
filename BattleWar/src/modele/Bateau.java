@@ -41,16 +41,16 @@ public class Bateau {
 		 * si OUI, retourne True
 		 * sinon retourne False
 		 */
-		for(int a=0; a < taille; a++){
-			if (localisation == tabBateau[a]){
+		for(int y=0; y < taille; y++){
+			if (localisation == tabBateau[y]){
 				for(int z = 0; z < taille; z++){
-					if (localisation == tabtTestToucher[a]){ 
-						a--;
+					if (localisation == tabtTestToucher[z]){ 
+						z--;
 						return 0;
 					}
 				}
-				tabtTestToucher[a] = localisation;
-				a++;
+				tabtTestToucher[y] = localisation;
+				y++;
 				return 2;
 			}
 		}
