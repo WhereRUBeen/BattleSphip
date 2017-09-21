@@ -19,6 +19,23 @@ public class Bateau {
 		this.nom = name;
 		
 	}
+	
+	
+	
+	/*** @return the nom*/
+	public String getNom() {
+		return nom;
+	}
+
+
+
+	/** * @return the taille */
+	public int getTaille() {
+		return taille;
+	}
+
+
+
 	/**
 	 * @param args
 	 */
