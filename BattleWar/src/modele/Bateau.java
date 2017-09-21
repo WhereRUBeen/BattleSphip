@@ -14,7 +14,7 @@ public class Bateau {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated methoub
-		System.out.println("hllo");
+		System.out.println("lo");
 
 	}
 
